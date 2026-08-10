@@ -374,6 +374,11 @@ footer {
         line-height: 1.6;
     }
 
+  .hero .btn {
+    display: block;
+    margin: 30px auto 0;
+  }
+  
     .profile-photo {
         max-width: 100%;
         height: auto;
