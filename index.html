@@ -9,7 +9,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<>
+<body>
+
+<!-- Intro Video -->
+<div id="intro-video">
+
+    <video id="welcome-video" playsinline>
+        <source src="intro.mp4" type="video/mp4">
+    </video>
+  
+<button id="start-intro">▶ TAP TO ENTER</button>
+  
+</div>
 
     <!-- Header -->
     <header>
@@ -181,6 +192,25 @@ Keyboard Events,</p>
   
     </footer>
 
-  
+    <!-- Intro Video JavaScript -->
+<script>
+    const intro = document.getElementById("intro-video");
+    const video = document.getElementById("welcome-video");
+    const startButton = document.getElementById("start-intro");
+
+    startButton.addEventListener("click", function () {
+
+        video.play();
+
+        startButton.style.display = "none";
+    });
+
+    video.addEventListener("ended", function () {
+
+        intro.style.display = "none";
+
+    });
+</script>
+
 </body>
 </html>
